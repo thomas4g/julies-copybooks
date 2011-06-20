@@ -1,12 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "template.dwt" -->
-
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <!-- #BeginEditable "doctitle" -->
-<title>Julie</title>
+<title>Julie's Copybooks</title>
 <!-- #EndEditable -->
 <style type="text/css">
 html, body{
@@ -106,7 +104,5 @@ Sed eget orci aliquet odio dictum dapibus et eu arcu. Aenean quis cursus eros. P
 		</footer>
 	</div>
 </body>
-
-<!-- #EndTemplate -->
 
 </html>
