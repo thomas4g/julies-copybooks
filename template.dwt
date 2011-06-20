@@ -13,6 +13,13 @@ html, body{
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	color:#777;
 }
+a {
+	color:#6699FF;
+	text-decoration:none;
+}
+a:hover {
+	color:#0066FF;
+}
 #page {
 	width:1000px;
 	margin:auto;

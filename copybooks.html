@@ -24,12 +24,18 @@
 </style>
 <!-- #EndEditable -->
 <style type="text/css">
-
 html, body{
 	margin:0;
 	padding:0;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	color:#777;
+}
+a {
+	color:#6699FF;
+	text-decoration:none;
+}
+a:hover {
+	color:#0066FF;
 }
 #page {
 	width:1000px;
@@ -193,7 +199,6 @@ label {
 	text-align:right;
 	padding:0 0 10px 0;
 }
-
 					</style>
 					<label for="type">Copybook Genres:</label><select id="type"><option>All</option><option>History</option><option>Advent</option></select>
 					<label for="font">Copybook Fonts:</label><select id="font"><option>All</option><option>Cursive</option><option>Manuscript</option></select>
@@ -205,6 +210,7 @@ label {
 							<span class="bookType">Advent</span>
 							<span class="bookGrades">1-2</span>
 							<span class="bookDescription">Insert Description Here</span>
+							<a class="bookLink" href="lululink"></a>
 							<img class="bookImage" src="Images/cover4.jpg" title="My First Advent Copybook :: Manuscript :: Advent :: Grades 1-2">
 						</div>
 						<div class="copybook">
@@ -225,7 +231,7 @@ label {
 										<div id="info"></div>
 										<p id="description"></p>		
 										<div id="closeBuy">
-										<a id="storeLink">Buy</a>  |  <a href="#">Close</a>
+											<a id="storeLink" href="#">Buy</a>  |  <a id="closeBox" href="#">Close</a>
 										</div>						
 										</div>
 
@@ -239,11 +245,13 @@ label {
 						$("#overlay").fadeIn("fast");
 						var $box = $("#overlay #box");
 						var $this = $(this);
-						$box.children("#bigImg").attr("src", $this.children("img.bookImage").attr("src"));
+						$("#bigImg").attr("src", $this.children("img.bookImage").attr("src"));
 						$box.children("h3").text($this.children("span.bookTitle").text());
-						$box.children("#info").text($this.children("span.bookType").text() + " | " + $this.children("span.bookFont").text() + " | Grades " + $this.children("span.bookGrades").text());
-						$box.children("#description").text($this.children("span.bookDescription").text());
+						$("#info").text($this.children("span.bookType").text() + " | " + $this.children("span.bookFont").text() + " | Grades " + $this.children("span.bookGrades").text());
+						$("#description").text($this.children("span.bookDescription").text());
+						$("#storeLink").attr("href", $this.children("a.bookLink").attr("href"));
 					});
+					$("#closeBox").click(function() {$("#overlay").fadeOut("fast"); });
 					function update() {
 					 $("#copybooks div.copybook").each(function() {
 					 var $this = $(this);
