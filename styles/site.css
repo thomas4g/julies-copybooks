@@ -16,7 +16,7 @@ background-size:250px;
 html, body{
 	margin:0;
 	padding:0;
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-family: sans-serif;
 	color:#222;
 }
 a {
@@ -59,9 +59,6 @@ nav a {
 	color:#fff;
 	display:inline-block;
 	padding:5px 10px;
-	border-left:1px #fff solid;
-	border-right:1px #fff solid;
-	border-collapse:collapse;
 	background:#06f;
 }
 nav a:hover {
@@ -81,6 +78,7 @@ footer {
 	color:#555;
 	text-align:center;
 	display:block;
+	clear:both;
 }
 #main {
 	padding:20px;
