@@ -1,0 +1,87 @@
+﻿html {
+height:100%;
+background-image: url('../Images/knight.png');
+background-position:-100px 100%;
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:420px;
+}
+body {
+background-image: url('../Images/angel.png');
+background-position:100% -50px;
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:250px;
+}
+html, body{
+	margin:0;
+	padding:0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color:#222;
+}
+a {
+	color:#6699FF;
+	text-decoration:none;
+}
+a:hover {
+	color:#0066FF;
+}
+#page {
+	width:1000px;
+	margin:auto;
+	text-align:left;
+	border-top:0;
+}
+#logo {
+	vertical-align:middle;
+	margin:5px;
+}
+h1 {
+	display:inline;
+	font-family: Cambria;
+	font-weight:normal;
+	font-size:50px;
+	color:#000;
+	text-shadow:#000 0 0 .04em;
+}
+nav{
+	text-align:right;
+	display:block;
+	padding:0;
+	margin:10px;
+}
+nav a {
+	font-family: Sans-Serif;
+	font-weight:bold;
+	text-shadow:#fff 0 0 1px; 
+	font-size:25px;
+	text-decoration:none;
+	color:#fff;
+	display:inline-block;
+	padding:5px 10px;
+	border-left:1px #fff solid;
+	border-right:1px #fff solid;
+	border-collapse:collapse;
+	background:#06f;
+}
+nav a:hover {
+color:#ff9;
+text-shadow:#ff9 0 0 1px;
+}
+img.icon {
+	width:30px;
+	height:30px;
+	margin:0 5px;
+	border:0;
+}
+footer {
+	padding:10px;
+	font-family: "Century Gothic", Tahoma, "Trebuchet MS";
+	text-shadow:#333 0 0 .05em; 
+	color:#555;
+	text-align:center;
+	display:block;
+}
+#main {
+	padding:20px;
+}

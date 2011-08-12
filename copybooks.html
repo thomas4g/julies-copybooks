@@ -9,145 +9,24 @@
 <title>Julie's Copybooks</title>
 <script type="text/javascript" src="Scripts/jquery-1.4.2.min.js" >
 </script>
-<script type="text/javascript" src="Scripts/jquery.tmpl.js" >
-</script>
-<script type="text/javascript" src="Scripts/knockout-1.2.0.js" >
-</script>
 <style type="text/css">
-
-
-
-.book {
-	width:100px;
-	margin:20px;
-	border-radius:5px;
-}
-</style>
-<!-- #EndEditable -->
-<style type="text/css">
-html, body{
-	margin:0;
-	padding:0;
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-	color:#777;
-}
-a {
-	color:#6699FF;
-	text-decoration:none;
-}
-a:hover {
-	color:#0066FF;
-}
-#page {
-	width:1000px;
-	margin:auto;
-	text-align:left;
-	background-color: #CFE1FE;
-	border-radius:0 0 10px 10px;
-}
-#logo {
-	width:250px;
-	vertical-align:middle;
-	margin:5px;
-}
-h1 {
-	display:inline;
-	font-family: Cambria;
-	font-weight:normal;
-	font-size:50px;
-	color:#000;
-	text-shadow:#000 0 0 .04em;
-}
-#menu {
-	text-align:right;
-	display:block;
-	padding:0;
-	margin:10px;
-}
-#menu li{
-	display:inline;
-}
-#menu li a {
-	font-family: "Century Gothic", Tahoma, "Trebuchet MS";
-	text-shadow:#333 0 0 .05em; 
-	font-size:20px;
-	text-decoration:none;
-	color:#333;
-	margin:0 5px;
-	font-weight:bold;
-}
-#menu li a:hover {
-color:#0066FF;
-}
-img.icon {
-	width:20px;
-	margin:0 5px;
-	border:0;
-}
-footer {
-	padding:10px;
-	font-family: "Century Gothic", Tahoma, "Trebuchet MS";
-	text-shadow:#333 0 0 .05em; 
-	color:#555;
-	text-align:center;
-	display:block;
-}
-#main {
-	padding:20px;
-}
-</style>
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-</head>
-
-<body>
-	<div id="page">
-		<header>
-			<div id="title">
-				<img id="logo" src="Images/covers.png" alt="Copybooks" title="Julie's Copybooks">
-				<h1>Julie's Copybooks</h1>
-			</div>
-			<nav>
-				<ul id="menu">
-					<li><a href="index.html"><img class="icon" src="Images/home.png">Home</a></li>
-					<li><a href="copybooks.html"><img class="icon" src="Images/book.png">Copybooks</a></li>
-					<li><a href="contact.html"><img class="icon" src="Images/phone.png">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="main">
-					<!-- #BeginEditable "content" -->
-					<style type="text/css">
-
-
-
-
-					#copybooks div.copybook {
-	margin:10px;
+#copybooks div.copybook {
+	margin:7px;
 	float:left;
 }
-						#copybooks div.copybook span {
-							display:none;
-						}
-						#copybooks div.copybook img.bookImage {
+#copybooks div.copybook span {
+	display:none;
+}
+#copybooks div.copybook img.bookImage {
 	width:100px;
+	height:129px;
+	border:1px #999 solid;
 }
 select {
 	font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	font-size:15px;
 	color:#555;
-	padding-left:15px;
-	border-radius:10px 0 0 10px;
 	border:1px #555 solid;
-	outline: 0;
-}
-input[type=text] {
-	border-radius:5px;
-	border:1px #999 solid;
-	padding:2px;
-	width:50px;
-	outline:0;
 }
 label {
 	margin:0 10px 0 0;
@@ -161,8 +40,9 @@ label {
 	z-index:5;
 	background-color: rgba(0,0,0,.5);
 	zoom:1;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
 	display:none;
+	text-align:center;
 }
 #box {
 	z-index:6;
@@ -170,12 +50,17 @@ label {
 	width:800px;
 	margin:auto;
 	height:450px;
-	margin-top:100px;
+	top:100px;
 	border-radius:15px;
 	box-shadow:5px 5px 30px 0px #000;
 	padding:20px;
+	position:relative;
+	display:inline-block;
+	*zoom:1;
+	*display:inline;
+	text-align:left;
 }
-#box img#bigImg {
+#box #bigImg {
 	width:340px;
 	float:left;
 	border:1px #ddd solid;
@@ -203,7 +88,40 @@ text-align:right;
 	text-align:right;
 	padding:0 0 10px 0;
 }
+#js-warning {
+	background:#f00;
+	color:#fff;
+	font-size:18px;
+	padding:5px;
+	display:block;
+	text-align:center;
+}
+#js-warning a {
+	color:#fff;
+	text-decoration:underline;
+}
 					</style>
+<!-- #EndEditable -->
+<link rel="stylesheet" href="styles/site.css" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div id="page">
+		<header>
+			<div id="title">
+				<img id="logo" src="Images/logo3.png" alt="Copybooks" title="Julie's Copybooks">
+			</div>
+			<nav>
+					<a href="index.html">Home</a>
+					<a href="copybooks.html">Copybooks</a>
+					<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+		<div id="main">
+					<!-- #BeginEditable "content" -->
+					<span id="js-warning">You're going to need JavaScript enabled &amp; unblocked to view this page. Having Trouble? View the copybooks on <a href="http://www.lulu.com/browse/search.php?fListingClass=0&amp;fSearch=Julie+Shields+copybook&amp;fSubmitSearch=Go&amp;showingSubPanels=&amp;fSort=relevance_deschttp://www.lulu.com/browse/search.php?fListingClass=0&amp;fSearch=Julie+Shields+copybook&amp;fSubmitSearch=Go&amp;showingSubPanels=&amp;fSort=relevance_desc">Lulu</a></span>
 					<label for="type">Copybook Genres:</label><select id="type"><option>All</option><option>History</option><option>Advent</option></select>
 					<label for="level">Handwriting Level:</label><select id="level"><option>All</option><option>Cursive</option><option>Manuscript</option></select>
 					<label for="font">Copybook Fonts:</label>
@@ -213,9 +131,7 @@ text-align:right;
 					<option>ZB</option>
 					<option>HWT</option>
 					</select>
-
 					<div id="copybooks">
-					
 						<div class="copybook">
 							<span class="bookTitle">Ancient History Copybook</span>
 							<span class="bookFont">GDI Cursive</span>
@@ -380,12 +296,21 @@ text-align:right;
 
 					</div>
 					<script type="text/javascript">
+					document.getElementById("js-warning").style.display = "none";
 					var type = "All";
 					var level = "All";
 					var font = "All";
+					$("#overlay").click(function() {
+					$(this).hide();
+					});
+					$("#box").click(function(e) { e.stopPropagation(); });
+					$("#box").blur(function() {
+						$("#overlay").hide();
+					 });
 					$("#copybooks div.copybook").click(function() {
-						$("#overlay").fadeIn("fast");
+						$("#overlay").show();
 						var $box = $("#overlay #box");
+						$box.focus();
 						var $this = $(this);
 						$("#bigImg").attr("src", $this.children("img.bookImage").attr("src"));
 						$box.children("h3").text($this.children("span.bookTitle").text());
@@ -393,7 +318,7 @@ text-align:right;
 						$("#description").text($this.children("span.bookDescription").text());
 						$("#storeLink").attr("href", $this.children("a.bookLink").attr("href"));
 					});
-					$("#closeBox").click(function() {$("#overlay").fadeOut("fast"); });
+					$("#closeBox").click(function() {$("#overlay").hide(); });
 					function update() {
 					 $("#copybooks div.copybook").each(function() {
 					 var $this = $(this);
@@ -421,15 +346,12 @@ $this.hide();
 						update();
 					});
 					</script>
-					<!-- #EndEditable --></div>
-
-	
+					<!-- #EndEditable -->
+		</div>
 		<footer>
 		&copy; 2011 Julie's Copybooks
 		</footer>
 	</div>
 </body>
-
 <!-- #EndTemplate -->
-
 </html>

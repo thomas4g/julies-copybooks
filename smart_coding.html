@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Smart Coding</title>
+<style type="text/css">
+
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: small;
+}
+code {
+	background-color:#eee;
+	padding:1px 2px;
+}
+</style>
+</head>
+
+<body>
+<h4>Smart Coding</h4>
+<h5>Why?</h5>
+I recently had a discussion about semantics and the role 
+of markup and scripting and where their paths meet and where they don't.&nbsp; 
+Apparently it's rather a touchy matter. Obviously some web developers couldn't 
+care less about what their <a href="http://enterprise-html.com/">markup</a>,
+<a href="http://enterprise-css.com/">styling</a>, and
+<a href="http://enterprise-js.com/">scripts</a> look like as long as the 
+finished product looks good. (<em>See </em>Sites, Commercial) <br>But smart 
+coding is important for a few reasons: <br>
+
+<ul>
+	<li>A futuristic coding mindset <br>&nbsp;&nbsp;&nbsp; - code in such a way 
+	that your site will work in the next several iterations of any given 
+	browser. <br>&nbsp;&nbsp;&nbsp; - code in such a way that your site can 
+	easily be updated by you or (presumably) a different developer 5 years 
+	forward</li>
+	<li>Site speed: the cleaner, more semantic, and simpler your code is, the 
+	faster it loads and works. Elementary.</li>
+</ul>
+<h5>What?</h5>
+<p>First off, what is <em>semantics?&nbsp; </em>Glad you asked. </p>
+	<span>se·man·tics</span><span>&nbsp;[&nbsp;sə 
+	mántiks&nbsp;]&nbsp;&nbsp;&nbsp;</span>
+			<ol>
+				<li><b>study of meaning in language:</b><span>&nbsp;</span>the 
+				study of how meaning in language is created by the use and 
+				interrelationships of words, phrases, and sentences</li>
+				<li><b>study of symbols:</b><span>&nbsp;</span>the 
+				study of the relationship between symbols and what they 
+				represent</li>
+				<li><b>study of logic:</b><span>&nbsp;</span>the 
+				study of ways of interpreting and analyzing theories of logic</li>
+			</ol>
+<span>se·man·tic</span><span>&nbsp;[&nbsp;sə 
+	mántik&nbsp;]&nbsp;&nbsp;</span>
+			<ol>
+				<li><b>relating to word meanings:</b><span>&nbsp;</span>relating 
+				to meaning or the differences between meanings of words or 
+				symbols</li>
+				<li><b>of semantics:</b><span>&nbsp;</span>relating 
+				to semantics</li>
+				<li><b>relating to truth:</b><span>&nbsp;</span>relating 
+				to the conditions in which a system or theory can be said to be 
+				true</li>
+			</ol>
+
+<p>When we're talking about <em>semantic markup</em>, we mean that the tags that 
+form our HTML should be wrapping content that you would expect them to wrap, 
+even if it could <em>technically</em> be otherwise. Tags <em>tell</em> you what 
+they're supposed to contain; don't put anything else in them. Just because you 
+can doesn't mean you should. A <code>&lt;body&gt;</code> tag should contain the
+<em>body</em> of the page. Scripts and style sheets <em>don't go there</em>. A 
+&lt;p&gt; is a paragraph. Don't use it to layout the page; it's for a paragraph 
+of text. Again, elementary.</p>
+<h5>How?</h5>
+<p>Okay. Definition time.
+
+</p>
+<ul>
+	<li>HTML === <em>Hypertext <strong>Markup</strong> Language</em></li>
+	<li>Javascript === scripting language independent from but primarily used 
+	for interaction with the DOM. (Oh, and <em>Javascript !== Java</em>)</li>
+	<li>CSS === <em>Cascading <strong>Style</strong> sheets</em></li>
+	<li>Oh, and DOM === <em>Document Object Model</em></li>
+</ul>
+<p>(notice how there's no type coercion for those equalities...)</p>
+<p>Okay, PDS (<em>Pretty Dang Simple)</em>, eh? Right? But lots of people don't 
+get it. One thing I've certainly learned, (esp. thanks to all pals at SO) is to 
+keep a separation of concerns. Here's three <em>freakishly obvious, 
+why-the-crap-don't-more-people-get-this??!?, fundamental to web design</em> 
+principles:</p>
+<ol>
+	<li>HTML is for organizing your content as semantically as possible. Period.
+	</li>
+	<li>CSS is for effectively displaying your content in a style fashion. 
+	Period.</li>
+	<li>Javascript is for scripting content to <em>improve</em> user 
+	interaction. Comma. Just kidding. Period.</li>
+</ol>
+<p>"<em>But wait!</em>" you say, in all your annoying impertinence, "<em>doesn't 
+HTML help with styling too? What about the infamous clearfix? Classnames, 
+ids? That's all styling, right?"</em> </p>
+<p>Sort of.  I for one say clearfixing is a stupid perk that should go away 
+as the languages improve. For one, just use the clearfix on an element that's 
+already down there. Explicitly setting the overflow is supposed to work as well.
+Ids and class names are used for the styling to know what it's working with, but 
+they also help with semantics by providing a description for the more obscure 
+elements. </p>
+<p>Basically the point I'm trying to make here is you shouldn't have to write 
+your HTML for your CSS. You write your HTML for your content. You write your CSS 
+for your HTML.  Writing semantic HTML helps you write HTML that snaps to 
+the content, and vice-versa. Example: semantic HTML is the center column of a 
+three column layout <em>first</em> in your markup because it is more important, 
+even though there is no technical difference. If you're doing it right, the CSS 
+shouldn't need that column "in-between" the other two anyways. As a 
+corollary (read: <em>insert cool word for related-point</em>), you would never 
+use a three-column just because it looks good; you use it to support the overall 
+message and content of the site. Write HTML for your content. </p>
+<p>A three-column design with a header and footer should be simple:<br>
+<code class="block">
+&lt;header&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;img id="logo"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h1&gt;Title&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp; &lt;nav&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;ol&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;li&gt;Home&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;li&gt;Products&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;li&gt;Contact&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/ol&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;/nav&gt;<br>&lt;/header&gt;
+<br>&lt;section id="main"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div id="content"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; 
+&lt;div id="leftCol"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div id="rightCol"&gt;&lt;/div&gt;<br>
+&lt;/section&gt;<br>&lt;footer&gt;Copyright&lt;/footer&gt;</code></p>
+<p>I'm not saying the above is perfect by any standard. But it's closer to 
+semantic then a heck of a lot of markup up there, mostly because it couldn't 
+care less what the CSS and Javascript does. That's the point. You should be able 
+to keep generally the same layout with markup but radically change the design 
+with CSS. In the above example, the <code>&lt;header&gt;</code> tag contains items that form a 
+header. The <code>&lt;h1&gt;</code> tag contains the primary piece ("1") of the header ("h"). The 
+image's id is marked in such a way as to communicate the specific purpose of 
+this generic tag.&nbsp; The <code>&lt;nav&gt;</code> tag is used to contain navigation. The <code>&lt;ol&gt;</code> 
+tag contains an ordered list of <code>&lt;li&gt;</code> list items. Depending on the navigation, 
+the <code>&lt;ul&gt;</code> tag could be used - I think it most cases, navigation <em>is</em> 
+ordered - you want the viewer to read your home page first, then view your 
+products, then contact you.&nbsp; The <code>&lt;section&gt;</code> tag contains a <em>section</em> 
+that is "main" - as delimited by the id. And etc., etc. You guys get it.
+</p>
+<p>This brings up an avenue into the philosophy of web design. Like other kinds 
+of design - CD Album Art, Software products, etc. - the design is just a means 
+to an end; a pretty way of displaying content. This is one reason I don't really 
+like templates - it feels forced, often simply because it doesn't know what you 
+want to use it for. You have to know what your content is, then design 
+for it. (Blah blah blah...)</p>
+<p>Anywho. What <a href="http://chat.stackoverflow.com/rooms/17/javascript">I and the guys</a> were actually talking about was scripting and how 
+it relates to markup. I had placed an <code>&lt;input&gt;</code> outside of a <code>&lt;form&gt;</code> tag 
+because a script was interacting with it and I didn't want it to get posted back 
+with the rest of the form's content. Remember how I said markup is for arranging 
+your content semantically, period? I lied. It also, occasionally, has to serve as 
+a means of taking input - it's the portal to the actual interaction with the 
+user that comes via scripting or server-side code. And right around here 
+is where "semantics" starts jumping around. My <code>&lt;input&gt;</code> was indeed something that 
+needed to get posted back to the server - the reason I didn't put it in was 
+because my script was putting it in (handling the formatting). See, I got one 
+part right: scripts are for<em> improving</em> user interaction; and user 
+interaction shouldn't be dependent on it.&nbsp; But I wasn't "improving" 
+enough. My markup should have pretended scripts didn't exist, that only the 
+server existed to take in the input, and the script should have improved from 
+there. (<em>Side Note:</em> this is why I can't 
+wait for CSS3 Animations to finish up. Scripting shouldn't have to do it). 
+Granted, right now lots of devices have scripting enabled. But to repeat: just 
+because you can doesn't mean you should. Just because scripting is enabled 
+doesn't mean you have to do an animation with it. That's not the script's job. 
+It<em> is</em> the script's job to, for example, take a form (<em>that already 
+works without scripts</em>) and improve it to use nice AJAX instead).</p>
+<p>On the other hand, some web <em>applications</em> can set a strict user-base 
+(or know a strict user base) and Javascript is the essential core of the 
+application. I'm not talking about these. I'm talking about <em>public</em> 
+websites, not intranet websites or internet/intranet applications. </p>
+<p>Whether you actually support browsers that don't have scripting enabled or 
+can't handle HTML5 and CSS3 is up to you. The point is to keep a 
+separation of concern on these things. Even if you're not supporting 
+script-disabled browsers, your display of content shouldn't depend on the user's 
+interaction with it. Why? Separation of concerns:</p>
+<ul>
+	<li>If a new scripting technique comes on the scene and Javascript 
+	becomes deprecated, your HTML/CSS should still work, etc.</li>
+	<li>Scalability: You should be able to radically change the layout or design 
+	of a page without scripts being affected; and vice-versa.</li>
+	<li>Maintainability: Someone with zero knowledge of Javascript should be 
+	able to edit the HTML/CSS files without fear (well, to a point. They 
+	shouldn't scrapping ids or class names)</li>
+</ul>
+<p>Also, I realize there's some major overlap here. HTML, CSS, and Javascript 
+aren't automagically and completely independant of each other. Sometimes you <em>
+do</em> have to add an element solely for styling purposes. The world isn't 
+perfect. On a better note, a <em>good </em>overlap occus with the <em>natural</em> 
+overlap of HTML/CSS (class names, ids, tag names, the <code>&lt;em&gt;</code> tag, etc). 
+Additionally, anotherdesigned 'good' overlap is the DOM in Javascript. Some say 
+it's crap. Some say it rocks. Whatever. The point is, if you're working with 
+Javascript in the browser, in a website, you're primarily going to be 
+modifiying, adding, and removing elements from the document. But when you start 
+using Javascript to generate HTML that is <em>vital</em> to the execution of the 
+page correctly, there's a problem. </p>
+<p>&nbsp;</p>
+<p>There you go. The insane ramblings of one of millions of web developers. 
+Please comment with your thoughts - I'm sure I've left something (obvious 
+probably) out. Thanks!<br>&nbsp;&nbsp;&nbsp; -<em>Thomas</em></p>
+</body>
+
+</html>
