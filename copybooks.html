@@ -10,90 +10,7 @@
 <meta name="author" content="Julie Shields">
 <!-- #BeginEditable "doctitle" -->
 <title>Julie's Copybooks</title>
-<script type="text/javascript" src="Scripts/jquery-1.4.2.min.js" >
-</script>
 <style type="text/css">
-
-
-
-select {
-	font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-	font-size:15px;
-	color:#555;
-	border:1px #555 solid;
-}
-label {
-	margin:0 10px 0 0;
-}
-#overlay {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	z-index:5;
-	background-color: rgba(0,0,0,.5);
-	zoom:1;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
-	display:none;
-	text-align:center;
-}
-#box {
-	z-index:6;
-	background-color: #fff;
-	width:800px;
-	margin:auto;
-	height:450px;
-	top:100px;
-	border-radius:15px;
-	box-shadow:5px 5px 30px 0px #000;
-	padding:20px;
-	position:relative;
-	display:inline-block;
-	*zoom:1;
-	*display:inline;
-	text-align:left;
-}
-#box #bigImg {
-	width:340px;
-	float:left;
-	border:1px #ddd solid;
-}
-#box h3 {
-	float:right;
-	margin:5px;
-	font-size:28px;
-	font-family:Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	color:#555;
-		width:430px;
-text-align:right;
-}
-#box div#info {
-	float:right;
-	
-}
-#box p#description {
-	float:left;
-	margin:10px;
-	width:430px;
-}
-#box div#closeBuy {
-	clear:both;
-	text-align:right;
-	padding:0 0 10px 0;
-}
-#js-warning {
-	background:#f00;
-	color:#fff;
-	font-size:18px;
-	padding:5px;
-	display:block;
-	text-align:center;
-}
-#js-warning a {
-	color:#fff;
-	text-decoration:underline;
-}
 .cover {
 float:left;
 width:150px;
@@ -144,7 +61,7 @@ color:#ff9;
 			<nav>
 					<a href="index.html">Home</a>
 					<a href="copybooks.html">Copybooks</a>
-					<a href="contact.html">Contact</a>
+					<a href="about.html">About</a>
 			</nav>
 		</header>
 		<div id="main">
@@ -332,58 +249,6 @@ This is a copybook for the Advent season, designed for children in grades 1-3, w
 										</div>
 
 					</div>
-					<script type="text/javascript">
-					document.getElementById("js-warning").style.display = "none";
-					var type = "All";
-					var level = "All";
-					var font = "All";
-					$("#overlay").click(function() {
-					$(this).hide();
-					});
-					$("#box").click(function(e) { e.stopPropagation(); });
-					$("#box").blur(function() {
-						$("#overlay").hide();
-					 });
-					$("#copybooks div.copybook").click(function() {
-						$("#overlay").show();
-						var $box = $("#overlay #box");
-						$box.focus();
-						var $this = $(this);
-						$("#bigImg").attr("src", $this.children("img.bookImage").attr("src"));
-						$box.children("h3").text($this.children("span.bookTitle").text());
-						$("#info").text($this.children("span.bookType").text() + " | " + $this.children("span.bookFont").text() + " | Grades " + $this.children("span.bookGrades").text());
-						$("#description").text($this.children("span.bookDescription").text());
-						$("#storeLink").attr("href", $this.children("a.bookLink").attr("href"));
-					});
-					$("#closeBox").click(function() {$("#overlay").hide(); });
-					function update() {
-					 $("#copybooks div.copybook").each(function() {
-					 var $this = $(this);
-					 var gs = $this.children("span.bookGrades").text().split("-");
-					 var min = parseInt(gs[0],10);
-					 var max = parseInt(gs[1],10)
-					 	if((type == "All" || $this.children("span.bookType").text() == type) && (font == "All" || $this.children("span.bookFont").text().indexOf(font) > -1) && (level == "All" || $this.children("span.bookFont").text().indexOf(level) > -1)) {
-					 	$this.show();
-					 	}
-					 	else {
-$this.hide();
-					 	  }
-					 });
-					}
-					$("#type").change(function() {
-						type = $(this).val();
-						update();
-					});
-					$("#font").change(function() {
-						font = $(this).val();
-						update();
-					});
-					$("#level").change(function() {
-						level = $(this).val();
-						update();
-					});
-
-					</script>
 					<!-- #EndEditable -->
 		</div>
 		<footer>
