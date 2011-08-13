@@ -16,18 +16,6 @@
 
 
 
-#copybooks div.copybook {
-	margin:7px;
-	float:left;
-}
-#copybooks div.copybook span {
-	display:none;
-}
-#copybooks div.copybook img.bookImage {
-	width:100px;
-	height:129px;
-	border:1px #999 solid;
-}
 select {
 	font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 	font-size:15px;
@@ -106,6 +94,39 @@ text-align:right;
 	color:#fff;
 	text-decoration:underline;
 }
+.cover {
+float:left;
+width:150px;
+margin:0 10px 10px 0;
+clear:both;
+border:1px solid #444;
+}
+h3 {
+color:#06f;
+margin:5px;
+}
+.copybook {
+clear:both;
+}
+.info {
+font-size:.95em;
+color:#666;
+font-style:italic;
+padding:0 6px 0 7px;
+border-left:1px solid #777;
+}
+.font { border:none}
+.purchase {
+font-size:1.1em;
+padding:4px 10px;
+background-color:#069;
+border:1px solid #444;
+border-radius:4px;
+color:#fff;
+}
+.purchase:hover {
+color:#ff9;
+}
 					</style>
 <!-- #EndEditable -->
 <link rel="shortcut icon" href="favicon.ico">
@@ -128,168 +149,177 @@ text-align:right;
 		</header>
 		<div id="main">
 					<!-- #BeginEditable "content" -->
-					<span id="js-warning">You're going to need JavaScript enabled &amp; unblocked to view this page. Having Trouble? View the copybooks on <a href="http://www.lulu.com/browse/search.php?fListingClass=0&amp;fSearch=Julie+Shields+copybook&amp;fSubmitSearch=Go&amp;showingSubPanels=&amp;fSort=relevance_deschttp://www.lulu.com/browse/search.php?fListingClass=0&amp;fSearch=Julie+Shields+copybook&amp;fSubmitSearch=Go&amp;showingSubPanels=&amp;fSort=relevance_desc">Lulu</a></span>
-					<label for="type">Copybook Genres:</label><select id="type"><option>All</option><option>History</option><option>Advent</option></select>
-					<label for="level">Handwriting Level:</label><select id="level"><option>All</option><option>Cursive</option><option>Manuscript</option></select>
-					<label for="font">Copybook Fonts:</label>
-					<select id="font">
-					<option>All</option>
-					<option>GDI</option>
-					<option>ZB</option>
-					<option>HWT</option>
-					</select>
-					<div id="copybooks">
-						<div class="copybook">
-							<span class="bookTitle">Ancient History Copybook</span>
-							<span class="bookFont">GDI Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A selection of ancient texts, sayings, proverbs and stories for copywork use. This consummable workbook has formatted lines for ease of use. GDI Cursive edition. Perfect for classical and Charlotte Mason-style methods of instruction.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2673536">
-								 </a>
-							<img class="bookImage" src="Images/Covers/cover1.png" title="Ancient History Copybook | GDI Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">Ancient History Copybook</span>
-							<span class="bookFont">ZB Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A selection of ancient texts, sayings, proverbs and stories for copywork use. This consummable workbook includes formatted lines for handwriting ease. Zaner-Bloser cursive edition. Perfect for classical and Charlotte Mason-style methods of learning.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2673476"></a>
-							<img class="bookImage" src="Images/Covers/cover2.png" title="Ancient History Copybook | ZB Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">Ancient History Copybook</span>
-							<span class="bookFont">HWT Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A selection of ancient texts, sayings, proverbs and stories for copywork use. HWT Cursive edition. Perfect for classical and Charlotte Mason-style methods of instruction.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2703010"></a>
-							<img class="bookImage" src="Images/Covers/cover3.png" title="Ancient History Copybook | HWT Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">My First Ancient History Copybook</span>
-							<span class="bookFont">HWT Manuscript</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">1-3</span>
-							<span class="bookDescription">A selection of ancient texts, sayings, proverbs and stories for copywork use. This consummable workbook includes formatted lines for handwriting ease. HWT manuscript edition. Perfect for classical and Charlotte Mason-style methods of learning. This is a shorter version of the Ancient History copybook, for children in grades 1-3.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/1896906"></a>
-							<img class="bookImage" src="Images/Covers/cover4.png" title="My First Ancient History Copybook | HWT Manuscript | Grades 1-3">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">Medieval History Copybook</span>
-							<span class="bookFont">ZB Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A selection of medieval and Renaissance era texts, quotes and stories for copywork use. This consummable workbook incluedes formatted lines for handwriting ease. Zaner-Bloser cursive edition. Perfect for classical and Charlotte Mason-style methods of teaching.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2673530"></a>
-							<img class="bookImage" src="Images/Covers/cover5.png" title="Medieval History Copybook | ZB Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">Medieval History Copybook</span>
-							<span class="bookFont">HWT Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A collection of stories, songs, poetry and sayings from the middle ages, to used as copywork exercises. Lines are formatted using the HWT (Handwriting Without Tears) cursive font. Intended for grades 3-6. An excellent resource for classical and Charlotte Mason-styled education.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2673484"></a>
-							<img class="bookImage" src="Images/Covers/cover5.png" title="Medieval History Copybook | HWT Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">Medieval History Copybook</span>
-							<span class="bookFont">GDI Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A selection of medieval and Renaissance era texts, quotes and stories for copywork use. This consummable workbook incluedes formatted lines for handwriting ease. GDI cursive edition. Perfect for classical and Charlotte Mason-style methods of teaching</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2673534"></a>
-							<img class="bookImage" src="Images/Covers/cover5.png" title="Medieval History Copybook | GDI Cursive | Grades 3-6">
-						</div>
-					<div class="copybook">
-							<span class="bookTitle">My Medieval History Copybook</span>
-							<span class="bookFont">ZB Manuscript</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">1-3</span>
-							<span class="bookDescription">A selection of medieval texts, sayings, and songs for copywork use. This consummable workbook includes formatted lines for handwriting ease. ZB manuscript edition. Perfect for classical and Charlotte Mason-style methods of learning. This is a shorter version of the Medieval History copybook, for children in grades 1-3.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2526820"></a>
-							<img class="bookImage" src="Images/Covers/cover12.png" title="My Medieval History Copybook | ZB Manuscript | Grades 1-3">
-						</div>
-
-						<div class="copybook">
-							<span class="bookTitle">Early Modern History Copybook</span>
-							<span class="bookFont">ZB Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">Insert Description Here</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2673476"></a>
-							<img class="bookImage" src="Images/Covers/cover6.png" title="Early Modern History Copybook | ZB Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">Early Modern History Copybook</span>
-							<span class="bookFont">GDI Cursive</span>
-							<span class="bookType">History</span>
-							<span class="bookGrades">3-7</span>
-							<span class="bookDescription">Copywork selections from or about the Early Modern Period, with a focus on Western Civilization. Pairs nicely with a study of American history and the colonial period. Recommended for grades 3-7. Formatted lines make copywork easier. GDI cursive font.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/4986391"></a>
-							<img class="bookImage" src="Images/Covers/cover6.png" title="Early Modern History Copybook | GDI Cursive | Grades 3-7">
-						</div>
-<div class="copybook">
-							<span class="bookTitle">My Lessons and Carols Copybook</span>
-							<span class="bookFont">ZB Cursive</span>
-							<span class="bookType">Advent</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">A copybook for the Advent season, based on the popular "Lessons and Carols" service. Includes Scripture passages, carols and poems, with copywork for each day in December. Texts are on the left side, with formatted lines on the right side.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/2007420"></a>
-							<img class="bookImage" src="Images/Covers/cover8.png" title="My Lessons and Carols Copybook | ZB Cursive | Grades 3-6">
-						</div>
-						<div class="copybook">
-							<span class="bookTitle">My Lessons and Carols Copybook</span>
-							<span class="bookFont">HWT Cursive</span>
-							<span class="bookType">Advent</span>
-							<span class="bookGrades">3-7</span>
-							<span class="bookDescription">A copybook for the Advent season, based on the popular "Lessons and Carols" service. Includes Scriptures, carols and Christmas poetry, with copywork for each day in December. Texts are on the left-facing page, with formatted lines on the right. For a left-handed student, consider the downloadable file, so that you can switch the page order.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/1853228"></a>
-							<img class="bookImage" src="Images/Covers/cover8.png" title="My Lessons and Carols Copybook | HWT Cursive | Grades 3-7">
-						</div>
-<div class="copybook">
-							<span class="bookTitle">My Lessons and Carols Copybook</span>
-							<span class="bookFont">GDI Cursive</span>
-							<span class="bookType">Advent</span>
-							<span class="bookGrades">3-6</span>
-							<span class="bookDescription">This copybook is to be used during the season of Advent, with daily copywork selections for the month of December. It has a "Lessons and Carols" service theme, and can also be used as an Advent devotional. It is formatted with the GDI cursive font with selections on the left-facing page, and lines for copying on the right. Ideal for grades 3-7. For a left-handed child, consider the downloadable version; you will be able to switch the page order for maximum ease of use.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/3928823"></a>
-							<img class="bookImage" src="Images/Covers/cover8.png" title="My Lessons and Carols Copybook | GDI Cursive | Grades 3-7">
-						</div>
-
-<div class="copybook">
-							<span class="bookTitle">My First Advent Copybook</span>
-							<span class="bookFont">ZB Cursive</span>
-							<span class="bookType">Advent</span>
-							<span class="bookGrades">1-2</span>
-							<span class="bookDescription">A copybook for the Advent season for young children who are learning to write in a cursive hand. (Zaner-Bloser cursive font.) Daily copywork selections range from two to five short lines in length. Includes Scripture, carols and poetry, with Christmas clip-art images to spruce up the pages. Encourage your child to decorate and color the pages for a Christmas keepsake.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/1981460"></a>
-							<img class="bookImage" src="Images/Covers/cover9.png" title="My First Advent Copybook | ZB Cursive | Grades 1-2">
-						</div>
-<div class="copybook">
-							<span class="bookTitle">My First Advent Copybook</span>
-							<span class="bookFont">GDI Manuscript</span>
-							<span class="bookType">Advent</span>
-							<span class="bookGrades">1-3</span>
-							<span class="bookDescription">This is an Advent season copybook ideal for the early elementary years, in the popular GDI handwriting style. Includes a copywork selection for each day in December, consisting of 2 to 5 lines from Christmas Scriptures, carols and poems. Each page also features a Christmas clip-art image that can be colored or decorated by the student.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/1829566"></a>
-							<img class="bookImage" src="Images/Covers/cover10.png" title="My First Advent Copybook | GDI Manuscript | Grades 1-3">
-						</div>
-<div class="copybook">
-							<span class="bookTitle">My First Advent Copybook</span>
-							<span class="bookFont">HWT Manuscript</span>
-							<span class="bookType">Advent</span>
-							<span class="bookGrades">1-3</span>
-							<span class="bookDescription">This is a copybook for the Advent season, designed for children in grades 1-3, who have not begun to write with a cursive hand. There are daily selections ranging from two to five short lines in length. Each page is also embellished with a clip-art image, to encourage your child to color and decorate his page.</span>
-							<a class="bookLink" href="http://www.lulu.com/product/1844196"></a>
-							<img class="bookImage" src="Images/Covers/cover11.png" title="My First Advent Copybook | HWT Manuscript | Grades 1-3">
-						</div>
-
+					<section id="copybooks">
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover1.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Ancient History Copybook</h3>
+						<span class="info font">GDI Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+						A selection of ancient texts, sayings, proverbs and stories for copywork use. This consummable workbook has formatted lines for ease of use. GDI Cursive edition. Perfect for classical and Charlotte Mason-style methods of instruction.
+						</p>
+						<a href="http://www.lulu.com/product/2673536" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover2.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Ancient History Copybook</h3>
+						<span class="info font">ZB Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+A selection of ancient texts, sayings, proverbs and stories for copywork use. This consummable workbook includes formatted lines for handwriting ease. Zaner-Bloser cursive edition. Perfect for classical and Charlotte Mason-style methods of learning.						</p>
+						<a href="http://www.lulu.com/product/2673474" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover3.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Ancient History Copybook</h3>
+						<span class="info font">HWT Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+A selection of ancient texts, sayings, proverbs and stories for copywork use. HWT Cursive edition. Perfect for classical and Charlotte Mason-style methods of instruction.						</p>
+						<a href="http://www.lulu.com/product/2703008" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover4.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My First Ancient History Copybook</h3>
+						<span class="info font">HWT Manuscript</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 1-3</span>
+						<p class="description">
+A selection of ancient texts, sayings, proverbs and stories for copywork use. This consummable workbook includes formatted lines for handwriting ease. HWT manuscript edition. Perfect for classical and Charlotte Mason-style methods of learning. This is a shorter version of the Ancient History copybook, for children in grades 1-3.
+</p>
+						<a href="http://www.lulu.com/product/1896904" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover5.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Medieval History Copybook</h3>
+						<span class="info font">ZB Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+A selection of medieval and Renaissance era texts, quotes and stories for copywork use. This consummable workbook incluedes formatted lines for handwriting ease. Zaner-Bloser cursive edition. Perfect for classical and Charlotte Mason-style methods of teaching.
+</p>
+						<a href="http://www.lulu.com/product/2673530" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover5.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Medieval History Copybook</h3>
+						<span class="info font">HWT Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+A collection of stories, songs, poetry and sayings from the middle ages, to used as copywork exercises. Lines are formatted using the HWT (Handwriting Without Tears) cursive font. Intended for grades 3-6. An excellent resource for classical and Charlotte Mason-styled education.</p>
+						<a href="http://www.lulu.com/product/2673484" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover5.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Medieval History Copybook</h3>
+						<span class="info font">GDI Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+A selection of medieval and Renaissance era texts, quotes and stories for copywork use. This consummable workbook incluedes formatted lines for handwriting ease. GDI cursive edition. Perfect for classical and Charlotte Mason-style methods of teaching
+</p>
+						<a href="http://www.lulu.com/product/2673534" class="purchase">Purchase on Lulu</a>
+					</section>
+						<section class="copybook">
+					<img class="cover" src="Images/Covers/cover12.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My Medieval History Copybook</h3>
+						<span class="info font">ZB Manuscript</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 1-3</span>
+						<p class="description">
+A selection of medieval texts, sayings, and songs for copywork use. This consummable workbook includes formatted lines for handwriting ease. ZB manuscript edition. Perfect for classical and Charlotte Mason-style methods of learning. This is a shorter version of the Medieval History copybook, for children in grades 1-3.
+</p>
+						<a href="http://www.lulu.com/product/2526820" class="purchase">Purchase on Lulu</a>
+					</section>
 						<div style="clear:both"></div>
-					</div>
-					
+					</section>
+	<section class="copybook">
+					<img class="cover" src="Images/Covers/cover6.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Early Modern History Copybook</h3>
+						<span class="info font">ZB Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-7</span>
+						<p class="description">
+Copywork selections about and from the Early Modern History period (Explorers to 1850), with an emphasis on Western Civilization. ZB cursive font, with formatted lines for ease of use. Recommended for grades 3 to 7. Excellent for a Charlotte Mason or classical-style language arts program.</p>
+						<a href="http://www.lulu.com/product/12792819" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover6.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">Early Modern History Copybook</h3>
+						<span class="info font">GDI Cursive</span>
+						<span class="info type">History</span>
+						<span class="info grades">Grades 3-7</span>
+						<p class="description">
+Copywork selections from or about the Early Modern Period, with a focus on Western Civilization. Pairs nicely with a study of American history and the colonial period. Recommended for grades 3-7. Formatted lines make copywork easier. GDI cursive font.
+</p>
+						<a href="http://www.lulu.com/product/4986391" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover8.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My Lessons and Carols Copybook</h3>
+						<span class="info font">ZB Cursive</span>
+						<span class="info type">Advent</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+A copybook for the Advent season, based on the popular "Lessons and Carols" service. Includes Scripture passages, carols and poems, with copywork for each day in December. Texts are on the left side, with formatted lines on the right side.</p>
+						<a href="http://www.lulu.com/product/2007420" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover8.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My Lessons and Carols Copybook</h3>
+						<span class="info font">HWT Cursive</span>
+						<span class="info type">Advent</span>
+						<span class="info grades">Grades 3-7</span>
+						<p class="description">
+A copybook for the Advent season, based on the popular "Lessons and Carols" service. Includes Scriptures, carols and Christmas poetry, with copywork for each day in December. Texts are on the left-facing page, with formatted lines on the right. For a left-handed student, consider the downloadable file, so that you can switch the page order.</p>
+						<a href="http://www.lulu.com/product/1853228" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover8.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My Lessons and Carols Copybook</h3>
+						<span class="info font">GDI Cursive</span>
+						<span class="info type">Advent</span>
+						<span class="info grades">Grades 3-6</span>
+						<p class="description">
+This copybook is to be used during the season of Advent, with daily copywork selections for the month of December. It has a "Lessons and Carols" service theme, and can also be used as an Advent devotional. It is formatted with the GDI cursive font with selections on the left-facing page, and lines for copying on the right. Ideal for grades 3-7. For a left-handed child, consider the downloadable version; you will be able to switch the page order for maximum ease of use.</p>
+						<a href="http://www.lulu.com/product/3928823" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover8.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My First Advent Copybook</h3>
+						<span class="info font">ZB Cursive</span>
+						<span class="info type">Advent</span>
+						<span class="info grades">Grades 1-2</span>
+						<p class="description">
+A copybook for the Advent season for young children who are learning to write in a cursive hand. (Zaner-Bloser cursive font.) Daily copywork selections range from two to five short lines in length. Includes Scripture, carols and poetry, with Christmas clip-art images to spruce up the pages. Encourage your child to decorate and color the pages for a Christmas keepsake.</p>
+						<a href="http://www.lulu.com/product/1981460" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover8.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My First Advent Copybook</h3>
+						<span class="info font">GDI Manuscript</span>
+						<span class="info type">Advent</span>
+						<span class="info grades">Grades 1-3</span>
+						<p class="description">
+This is an Advent season copybook ideal for the early elementary years, in the popular GDI handwriting style. Includes a copywork selection for each day in December, consisting of 2 to 5 lines from Christmas Scriptures, carols and poems. Each page also features a Christmas clip-art image that can be colored or decorated by the student.</p>
+						<a href="http://www.lulu.com/product/1829566" class="purchase">Purchase on Lulu</a>
+					</section>
+					<section class="copybook">
+					<img class="cover" src="Images/Covers/cover8.png" alt="Ancient History Copybook GDI Cursive">
+						<h3 class="title">My First Advent Copybook</h3>
+						<span class="info font">HWT Manuscript</span>
+						<span class="info type">Advent</span>
+						<span class="info grades">Grades 1-3</span>
+						<p class="description">
+This is a copybook for the Advent season, designed for children in grades 1-3, who have not begun to write with a cursive hand. There are daily selections ranging from two to five short lines in length. Each page is also embellished with a clip-art image, to encourage your child to color and decorate his page.</p>
+						<a href="http://www.lulu.com/product/1844196" class="purchase">Purchase on Lulu</a>
+					</section>
+						<div style="clear:both"></div>
+					</section>
 					<div id="overlay">
 										<div id="box">
 										<img src="#" id="bigImg">
